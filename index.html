@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="TLD — быстрый доступ к Telegram-ссылкам и контактам." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TLD — быстрые Telegram-ссылки" />
+  <meta property="og:description" content="Открывайте нужный Telegram-канал или профиль одним нажатием." />
+  <meta property="og:image" content="images/preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Превью сайта TLD" />
+  <meta property="og:url" content="./" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TLD — быстрые Telegram-ссылки" />
+  <meta name="twitter:description" content="Открывайте нужный Telegram-канал или профиль одним нажатием." />
+  <meta name="twitter:image" content="images/preview.png" />
+  <title>Соцсети — ссылка на профиль</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/123.png" type="image/png">
+</head>
+<body>
+  <!-- Splash: черный экран с кнопкой TLD -->
+  <div class="splash" id="splash">
+    <button id="start-btn">TLD</button>
+  </div>
+
+  <main class="container hidden" id="main-content">
+    <!-- Один center container with video and overlay -->
+    <section class="center-container">
+      <div class="center-window glass glass-window" role="dialog" aria-label="Главное окно">
+        <div class="video-wrap">
+          <div class="media-column">
+            <video class="inner-video" autoplay loop playsinline muted preload="metadata" poster="images/123.png">
+              <source src="video/11_2_stab_prob4.mp4" type="video/mp4">
+            </video>
+
+            <div class="tg-caption">Info TLD</div>
+            <div class="buttons-row">
+              <a id="tg-overlay-btn" class="video-tg-btn" href="https://t.me/+ugd8-uBYBZE5ODhi" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram" aria-disabled="false" data-link="https://t.me/+ugd8-uBYBZE5ODhi">
+                <img class="tg-label" src="images/123.png" alt="Telegram">
+              </a>
+              <a id="second-overlay-btn" class="video-tg-btn video-tg-btn--second" href="https://t.me/+Mm-Zd4LNspI2MzZi" target="_blank" rel="noopener noreferrer" aria-label="Открыть вторую ссылку" aria-disabled="false" data-link="https://t.me/+Mm-Zd4LNspI2MzZi">
+                <img class="tg-label" src="images/1234.png" alt="Вторая кнопка">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mini window removed — only main video column remains -->
+    </section>
+  </main>
+
+  <!-- Фоновое видео (поместите файл bg.mp4 рядом с index.html) -->
+  <video class="bg-video" autoplay loop playsinline muted preload="metadata" poster="images/123.png">
+    <source src="video/11_2_stab_prob4.mp4" type="video/mp4">
+    <!-- если нужно, добавьте webm или другие форматы -->
+  </video>
+
+  <script src="script.js"></script>
+</body>
+</html>
